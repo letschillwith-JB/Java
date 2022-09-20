@@ -1,0 +1,5 @@
+Q1- Difference between static and non-static ?
+Answer:-
+---------
+Static is that part of program which is loaded on the CPU & RAM
+Whereas Non-Static is that part of program which is not loaded in the RAM but whenever needed called from the ROM.
