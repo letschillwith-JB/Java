@@ -1,0 +1,47 @@
+Q1. What do you mean by MultiThreading? Why it is important?
+Answer:
+Multithreadng is a part of Multitasking in which multiple task can be performed at a same time using a thread, when a programming language permits using thread. A thread is sub-process which works independently.
+It is important for optimising the efficiency of cpu & to decrease the time of executing a task.
+
+============================================================
+
+Q2. What are the Benifits of using Multithreading ?
+Answer:
+Benifits of MultiThreading are:-
+1. Threads works Indepedentely so it does not affect other thread .
+2. Many task can be perform at a same time so it saves the time.
+
+==============================================================
+
+Q3. Differentiate between process & thread ?
+Answer:
+Process are basically the program that are stored in the cpu for execution. A process can creates other processes known as child processes. The process can have following states new, ready, running, waiting, terminated & suspended.
+Thread is a part of the process. Process contains many threads for completing the process. Thread uses shared memory area therefore are more fast. Threads have following states New, Running, Runnable, block & dead.
+
+===============================================================
+
+Q4. What are the different states of thread or thread cycle ?
+Answer:
+States of the thread are :
+1. New
+2. Running
+3. Runnable
+4. Blocked
+5. Dead
+
+================================================================
+
+Q5. Differentiate between Thread class & Runnable interface for creating a thread ?
+Answer:
+Thread class & Runnable interface are two structure through which we can acheive Thread based multitasking in java.
+Both thread class & Runnable Interface contains run method with empty implementation, either we implement Runnable interface or extends Thread class we have to Override run method & write our programming logic which we want to execute through new thread.
+Internally Thread class also implements Runnable Interface .
+The main difference b/w both is if we extends Thread class then we lose the biggest advantage of the Object Oriented programming i.e. inheritance, therfore it is more effient to implement Runnable interface so we can also extend any other class simultanously.
+
+=================================================================
+
+Q6. What if we call run method directly instead of start method?
+Answer:
+If we directly call the run method then it will call the Overriden method of that class normally i.e we will not take th advantage of the thread based Multitasking, it is mere like calling normal method in the singlr thread,
+whereas when we call start method then internally it will create a new thread.
+=================================================================
