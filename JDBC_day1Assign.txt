@@ -1,0 +1,64 @@
+SB101: Jdbc Day1 Assingnment
+------------------------------
+
+Q1/- What is the requirement of Java Database communication?
+
+Answer:
+-------
+In java storage of data is highly inefficient whereas processing & presentation is highly efficient because of which we use database to store the data, but java cannot directly connects to database so to establish a connection b/w java & database we use database driver software.
+			---------------------------------
+
+Q2/- What is JDBC, Write a note on JDBC driver software.
+
+Answer:
+-------
+Java Database management system (JDBC) is an Java Api to connect with the database for which it uses JDBC driver software.
+                        --------------------------------
+
+Q3/- Write a Jdbc application to establish the connection with the Mysql database.
+
+Answer:
+--------
+
+import java.sql.*;
+
+class MysqlConnection{	
+public static void main(String args[]){  
+try{  
+Class.forName("com.mysql.jdbc.Driver");  
+Connection con=DriverManager.getConnection(  
+"jdbc:mysql://localhost:3306/sb101_db","root","root");  
+//here sonoo is database name, root is username and password  
+Statement stmt=con.createStatement();  
+ResultSet rs=stmt.executeQuery("select * from student");  
+while(rs.next())  
+System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));  
+con.close();  
+}catch(Exception e){ System.out.println(e);}  
+}  
+} 
+
+
+			------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
