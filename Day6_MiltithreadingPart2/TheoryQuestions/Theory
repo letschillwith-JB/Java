@@ -1,0 +1,23 @@
+Q1. What is the difference between a synchronized method and a synchronized block?
+
+A synchronized method assigns an object-level or class-level corresponding lock. And synchronized block assign a lock to the object based on the parameter.
+
+
+========================
+
+Q2/- What’s the difference between class lock and object lock?
+
+It can be used when you want non-static method or non-static block of the code should be accessed by only one thread. Class Level locks − It can be used when we want to prevent multiple threads to enter the synchronized block in any of all available instances on runtime
+========================
+
+Q4/- What is a Race condition, How will you solve the Race condition,explain with an
+Example.
+
+ a race condition can be defined as, a condition in which two or more threads compete together to get certain shared resources. For example, if thread A is reading data from the linked list and another thread B is trying to delete the same data
+
+
+
+=========================
+Q5/- What is the Difference between the sleep and join method .
+
+There is a difference between join() and sleep(). join() will wait until the timeout expires or the thread finishes. sleep() will just wait for the specified amount of time unless interrupted. So it is perfectly possible for join() to return much faster than the specified time.
