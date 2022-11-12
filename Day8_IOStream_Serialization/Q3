@@ -1,0 +1,5 @@
+Q-3 What is Serialization and Deserealization in Java ?
+Answer:
+---------
+Serialization is a process of converting a object into a byte code then to send that byte code, We can only serialize a obj of a class which implements interface java.io.Serializable, it is a marker interface.
+Deserialization is an reverse process of serialization i.e to convert byte code into the Object of a class .
