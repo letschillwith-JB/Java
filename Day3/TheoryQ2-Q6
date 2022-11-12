@@ -1,0 +1,35 @@
+Q2/ What is a ThreadPool, how to create a thread pool of 4 threads, and write down the
+difference between the Callable and Runnable interface.
+Answer-
+-------
+ A thread pool is a software design pattern for achieving concurrency of execution in a computer program.
+
+ Callable interface and Runnable interface are used to encapsulate tasks supposed to be executed by another thread. However, Runnable instances can be run by Thread class as well as ExecutorService but Callable instances can only be executed via ExecutorService.
+
+ =====================================================
+ Q3/- What do you mean by a Race condition, How to solve a race condition, give a proper
+ example.
+Answer:-
+---------
+Race conditions are most commonly associated with computer science and programming. They occur when two computer program processes, or threads, attempt to access the same resource at the same time and cause problems in the system. Race conditions are considered a common issue for multithreaded applications.
+
+ =====================================================
+Q4/ Explain about thread synchronization(inter-thread communication).
+Answer:-
+--------
+Cooperation (Inter-thread communication) is a mechanism in which a thread is paused running in its critical section and another thread is allowed to enter (or lock) in the same critical section to be executed.It is implemented by following methods of Object class:
+
+wait()
+notify()
+notifyAll()
+
+
+ =====================================================
+
+Q5/- What is the difference between the sleep and wait method?
+Answer:-
+-------
+Wait() method belongs to Object class whereas Sleep() method belongs to Thread class.
+Wait() method releases lock during Synchronization whereas	Sleep() method does not release the lock on object during Synchronization.
+Wait() should be called only from Synchronized context whereas There is no need to call sleep() from Synchronized context.
+Wait() is not a static method whereas Sleep() is a static method.
