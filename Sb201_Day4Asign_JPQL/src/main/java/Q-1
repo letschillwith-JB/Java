@@ -1,0 +1,8 @@
+Q-1 What are the limitations of EntityManager methods to perform CRUD operations with
+DB?
+Answer-
+=======
+> Using Entity manger i.e. JPA we cannot do huge transaction 
+> Cannot retrieve more Objects.
+> Cannot specify some extra information .
+> Retrieve data only based on Primary Key colm of table 
