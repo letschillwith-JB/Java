@@ -1,0 +1,22 @@
+## Problem 1 :  **State Bank Of India**
+
+**State Bank of India** provides an API that allows creation .deletion and transactions in the accounts. Your job is to implement the **stateBankDAOImpl** class using **JPA and Hibernate**. Create the use case classes to call and test the given methods.
+
+Database name: **stateBankDB**
+Table
+
+**account**
+
+**id: int Primary key [ Auto Generated ]
+email: varchar
+address: varchar
+balance: double**
+**created_date**: yyyy-mm-dd
+
+public interface stateBankDAO {
+		Account findAccountById(int id)
+		String saveAccount(Account account);
+		String deleteAccountById(int id)
+		String withdrawFromAccount(double amount,int accountId)
+		String depositInAccount(double amount,int accountId)
+}
