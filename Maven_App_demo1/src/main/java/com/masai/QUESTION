@@ -1,0 +1,24 @@
+## Problem 2 :  **Book Library**
+
+**Book will contain this information :**
+
+```
+		Book Id : 101,
+		name: "C++",
+    author: "Nitesh",
+    publication: "Rajput Publication",
+    category: "Computer Programming",
+    pages: 1500,
+    price: 240,
+    created_timestamp : 2019-12-11 10:58:37
+```
+
+**Note :**
+
+- Book Id should be auto generated
+
+- Book :
+    - **Get the information of any particular book by id**
+    - **Create a new Book**
+    - **Delete Book by ID**
+    - **Update Book by ID by doubling the price**
