@@ -1,0 +1,40 @@
+Q1/- Write a JPA application to implement One To Many bidirectional
+mapping among the following classes
+class Collage
+collageId
+collageName
+collageAddress;
+class Student
+studentRoll
+studentName
+mobileNumber
+email
+Note: use mappedBy clause to avoid 3rd linking table generation
+● Create a client application to store 2 Collage object and
+In each collage enroll 4 students object.
+● Write a JPQL to get all the Student details based on collageId
+and print the details.
+● Write a JPQL to get the Collage details based on studentRoll
+and print the details.
+
+
+
+
+
+Q2/ Consider the following classes:
+class Customer
+cid
+name
+mobileNumber
+email
+List<Address> addresses; // Has-A relationship
+class Address
+state
+city
+pincode
+● Map the above Customer and Address classes.
+● Create 2 Customer objects and each customer should have 2
+addresses. a.homeAdderss b. officeAddress
+● Write a JPQL to get all addresses of a customer based on cid.
+And print the details
+● Make use fetch type eager
