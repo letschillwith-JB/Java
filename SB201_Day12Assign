@@ -1,0 +1,61 @@
+Q1/- Explain about the life-cycle of a Spring Bean.
+Q2/- How many scopes are there for a Spring Bean, which is the default scope for a Spring
+Bean? Explain with an example.
+Q3/- What is the difference between setter injection and constructor injection?
+Q4/- What is auto wiring in Spring, how many types of Auto wiring are there in spring,
+explain with an example.
+
+
+===================================================
+
+Ans-1
+------
+The life-cycle of a Spring Bean refers to the various stages that a bean goes through from its creation to its destruction. The life-cycle of a Spring Bean can be broken down into the following stages:
+
+Instantiation: The bean is created by the Spring container, either through a constructor or a factory method.
+Dependency Injection: The Spring container injects any dependencies into the bean.
+Post-Initialization: Any additional initialization, such as custom init methods, is performed.
+Bean is ready for use by the application
+Bean is eligible for destruction by the container
+
+Ans-2
+------
+Spring provides several scope options for beans, including:
+
+singleton: Only one instance of the bean is created for the entire application, and it is shared by all objects that request it. This is the default scope.
+prototype: A new instance of the bean is created each time it is requested.
+request: A new instance of the bean is created for each HTTP request.
+session: A new instance of the bean is created for each HTTP session.
+global-session: A new instance of the bean is created for each global HTTP session (portlet context).
+For example:
+
+@Service
+@Scope("prototype")
+public class MyBean{
+//..
+}
+Here, MyBean is a prototype scope bean, so a new instance of MyBean will be created for each request.
+
+
+Ans-3
+------
+Setter injection and constructor injection are two ways that the Spring container can inject dependencies into a bean.
+
+Setter injection: The dependencies are injected into the bean using setter methods. This means that the bean must have a setter method for each dependency that needs to be injected.
+Constructor injection: The dependencies are injected into the bean using a constructor. This means that the bean must have a constructor that takes in the dependencies as arguments.
+The main difference between the two is that constructor injection enforces the bean to have the dependencies injected at the time of instantiation, whereas setter injection allows to instantiate the bean without the dependencies and then inject them later.
+
+
+
+
+Ans-4
+------
+Auto-wiring in Spring refers to the process of automatically injecting dependencies into a bean without the need for explicit configuration. There are several types of auto-wiring available in Spring:
+
+no: No auto-wiring is used.
+byName: Dependencies are injected based on the names of the properties or setter methods.
+byType: Dependencies are injected based on the types of the properties or setter methods.
+constructor: Dependencies are injected based on the types of the constructor arguments.
+autodetect: Spring
+
+
