@@ -19,7 +19,7 @@ public class Employee {
 	private Integer empId;
 	
 	private String name;
-	private int salary;
+	private Integer salary;
 	private String address;
 
 }
